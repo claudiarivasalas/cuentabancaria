@@ -15,7 +15,7 @@ class CuentaBancaria:
     def retiro(self, amount):
         if self.balance < amount:
             self.balance -= 5
-            print("Fondos Insuficientes, te restaremos 5")
+            print("Fondos Insuficientes")
         else:
             self.balance -= amount
         return self
@@ -36,5 +36,5 @@ class CuentaBancaria:
         sum = 0
         # utilizamos cls para referirnos a la clase
         for account in cls.todas_las_cuentas:
-            sum += balance.cuenta
+            sum += balance.amount
         return sum
