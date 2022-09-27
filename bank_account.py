@@ -32,9 +32,7 @@ class CuentaBancaria:
     # BONUS NINJA: utiliza un método de clase para imprimir todas las instancias de la información de una cuenta bancaria
 
     @classmethod
-    def imprime_cuentas_bancarias(cls):
-        sum = 0
+    def imprime_cuentas_bancarias(cls): 
         # utilizamos cls para referirnos a la clase
         for account in cls.todas_las_cuentas:
-            sum += balance.amount
-        return sum
+            account.mostrar_info_cuenta()
