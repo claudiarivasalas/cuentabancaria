@@ -1,15 +1,11 @@
 from bank_account import CuentaBancaria
-# Crea 2 cuentas
+from usuarios import Usuario
 
-# Para la primera cuenta, haz 3 depósitos y 1 retiro, luego genera intereses y muestra la información de la cuenta, todo en una línea de código (es decir, encadenando)
 
-cuenta1 = CuentaBancaria(0.15, 100)
-cuenta1.deposito(100).deposito(200).deposito(300).retiro(400).generar_interes().mostrar_info_cuenta()
+usuario1 = Usuario("Fernando Henriquez", "fh@gmail.com", 12345)
+usuario1.cuenta.deposito(500)
 
-# Para la segunda cuenta, haz 2 depósitos y 4 retiros, luego genera intereses y muestra la información de la cuenta, todo en una línea de código (es decir, encadenando)
+usuario1.abrir_nueva_cuenta(23456)
+usuario1.hacer_deposito_en_cuenta(23456, 400).hacer_retiro_en_cuenta(23456, 100)
+usuario1.mostrar_info_cuenta_usuario()
 
-cuenta2 = CuentaBancaria(0.15, 100)
-cuenta2.deposito(300).deposito(500).retiro(100).retiro(200).retiro(200).retiro(200).generar_interes().mostrar_info_cuenta()
-
-# print(CuentaBancaria.todas_las_cuentas)
-CuentaBancaria.imprime_cuentas_bancarias()

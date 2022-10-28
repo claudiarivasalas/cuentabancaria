@@ -3,7 +3,8 @@ class CuentaBancaria:
     nombre_banco = "Primer Dojo Nacional"
     todas_las_cuentas = []
 
-    def __init__(self, tasa_interes, balance):
+    def __init__(self, numero_cuenta, tasa_interes, balance):
+        self.numero_cuenta = numero_cuenta
         self.tasa_interes = tasa_interes
         self.balance = balance
         CuentaBancaria.todas_las_cuentas.append(self)
